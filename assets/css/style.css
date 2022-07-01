@@ -1,8 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Nunito:wght@300&family=Oswald:wght@300&display=swap');
+
 body {
-    background-color: black;
-    font-family: "Raleway", sans-serif;
+    background-image: url('../images/pexels-carlos-oliva-3586966.jpg');
+    font-family: Nunito, sans-serif;
     color: white;
     text-align: center;
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* --------- Heading */
@@ -10,6 +15,7 @@ body {
 .heading {
     text-align: center;
     font-size: 2.5rem;
+    text-transform: uppercase;
 }
 
 .logo {
@@ -20,7 +26,7 @@ body {
 /* --------- Game layout */
 
 .game-area {
-    background-color: #E6ECF0;
+    background-color: #1A03AD;
     box-sizing: border-box;
     width: 85%;
     height: 65vh;
@@ -87,8 +93,8 @@ body {
 .btn {
     width: 220px;
     height: 60px;
-    font-family: "Raleway", sans-serif;
-    text-transform: uppercase;
+    font-family: Nunito, sans-serif;
+    text-transform: capitalize;
     letter-spacing: 1.2px;
     color: white;
 }
@@ -99,78 +105,89 @@ body {
 
 .btn--big {
     padding-top: 10px;
-    border-radius: 50%;
+    border-radius: 10%;
     background-color: white;
     border: 10px solid;
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 85px;
     font-size: 3.2rem;
     margin: 0 30px;
     transition: all 0.5s;
+    padding: 5%;
 }
 
 .btn--big::after {
     content: attr(data-type);
-    font-size: 1rem;
-    color: #445361;
+    font-size: 1.5rem;
+    color: #000000;
     position: relative;
-    left: -0.5rem;
+    text-align: center;
 }
 
-.btn--blue {
-    border-color: blue;
-    color: blue;
+.btn--pheobe {
+    border-color: yellow;
+    color: yellow;
 }
 
-.btn--blue:active,
-.btn--blue:hover {
-    background-color: darkblue;
+.btn--pheobe:active,
+.btn--pheobe:hover {
+    background-color: darkgoldenrod;
     color: white;
 }
 
-.btn--orange {
-    border-color: orange;
-    color: orange;
+.btn--joey {
+    border-color: yellow;
+    color: yellow;
 }
 
-.btn--orange:active,
-.btn--orange:hover {
-    background-color: darkorange;
+.btn--joey:active,
+.btn--joey:hover {
+    background-color: darkgoldenrod;
     color: white;
 }
 
-.btn--red {
+.btn--ross {
     border-color: red;
     color: red;
 }
 
-.btn--red:active,
-.btn--red:hover {
+.btn--ross:active,
+.btn--ross:hover {
     background-color: darkred;
     color: white;
 }
 
-.btn--green {
-    border-color: green;
-    color: green;
+.btn--chandler {
+    border-color: blue;
+    color: blue;
 }
 
-.btn--green:active,
-.btn--green:hover {
-    background-color: darkgreen;
+.btn--chandler:active,
+.btn--chandler:hover {
+    background-color: navy;
     color: white;
 }
 
-.btn--gray {
-    margin-top: 25px;
-    background-color: #445361;
-    border: 1px transparent;
-    border-radius: 20px;
+.btn--rachel {
+    border-color: red;
+    color: red;
 }
 
-.btn--gray:active,
-.btn--gray:hover {
-    background-color: #0d1013;
+.btn--rachel:active,
+.btn--rachel:hover {
+    background-color: darkred;
+    color: white;
+}
+
+.btn--monica {
+    border-color: blue;
+    color: blue;
+}
+
+.btn--monica:active,
+.btn--monica:hover {
+    background-color: navy;
+    color: white;
 }
 
 /* --------- Media queries */
